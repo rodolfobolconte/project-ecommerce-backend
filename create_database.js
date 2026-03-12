@@ -1,5 +1,5 @@
 // Seleciona (ou cria) o banco de dados
-use ecommerce_db;
+db = db.getSiblingDB("ecommerce_db");
 
 // Criação das coleções
 db.createCollection("users");
@@ -19,7 +19,7 @@ db.orders.createIndex({ user_id: 1 });
 db.users.insertMany([
     { name: "Rodolfo", email: "rodolfo@example.com", password: "123456" },
     { name: "Maria", email: "maria@example.com", password: "abcdef" }
-    ]);
+]);
 
 // Produtos
 db.products.insertMany([

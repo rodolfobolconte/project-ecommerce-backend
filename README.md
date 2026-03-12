@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 Creating a database using MongoDB:
 ```
-mongosh < create_database.js
+mongosh create_database.js
 ```
 
 ### System Activation
