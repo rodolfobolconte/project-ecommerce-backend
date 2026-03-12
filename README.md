@@ -1,36 +1,35 @@
 # E-commerce Back-end
 
-Este projeto implementa um sistema de e-commerce utilizando FastAPI como framework backend e MongoDB como banco de dados.
+This project implements an e-commerce system using FastAPI as the backend framework and MongoDB as the database.
 
-Funcionalidades principais:
+Main features:
 
-- CRUD de usuários (criação, atualização e exclusão de contas)
-- CRUD de produtos
-- Carrinho de compras por usuário
-- Simulação de pagamento (confirmação de pedido)
+- User CRUD (account creation, update, and deletion)
+- Product CRUD
+- Shopping cart per user
+- Payment simulation (order confirmation)
 
-## Execução
+## Execution
 
-### Ambiente Virtual Python
+### Python Virtual Environment
 
-Criação, execução e instalação de dependências Python:
+Creating, activating, and installing Python dependencies:
 ```
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Criação do Banco de Dados
+### Database Creation
 
-Criação de um banco de dados utilizando MongoDB:
+Creating a database using MongoDB:
 ```
 mongosh < create_database.js
 ```
 
+### System Activation
 
-### Ativação do Sistema
-
-Execução na raiz do projeto:
+Running from the project root:
 ```
 uvicorn main:app --reload
 ```
